@@ -2,7 +2,7 @@
 " | os settings                         |
 " +-------------------------------------+
 " Windows
-if has('win32') || has ('win64')
+if has('win32') || has('win64')
 endif
 
 " LINUX
@@ -13,7 +13,7 @@ endif
 if has('mac')
 endif
 
-"GUI
+" GUI
 if has('gui_running')
 	set lines=35
 	set columns=120
@@ -29,7 +29,6 @@ set hlsearch
 set tabstop=4
 set ruler
 set showtabline=2
-set shiftwidth=4
 set laststatus=2
 set t_Co=256
 syntax on
@@ -51,7 +50,8 @@ imap {{ <C-o>${<Enter>
 if &compatible
   set nocompatible
 endif
-" need 'git clone https://github.com/Shougo/dein.vim 
+
+" need 'git clone https://github.com/Shougo/dein.vim
 "   ->    ~/.vim/dein/repos/github.com/Shougo/dein.vim'
 set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
 
@@ -90,18 +90,17 @@ imap <expr><TAB>
  \ neosnippet#expandable_or_jumpable() ?
  \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+						\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " For conceal markers.
 if has('conceal')
-  set conceallevel=2 concealcursor=niv
+	set conceallevel=2 concealcursor=niv
 endif
 
-"set snippet file dir
+" set snippet file dir
 let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/snippets/,~/.vim/snippets,~/.vim/dein/repos/github.com/Shougo/neosnippet-snippets/neosnippets'
 
 " +-------------------------------------+
 " | neocomplete                         |
 " +-------------------------------------+
 let g:neocomplete#enable_at_startup = 1
-
