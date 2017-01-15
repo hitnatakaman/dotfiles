@@ -27,6 +27,7 @@ set number
 set incsearch
 set hlsearch
 set tabstop=4
+set shiftwidth=4
 set ruler
 set showtabline=2
 set laststatus=2
