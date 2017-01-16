@@ -15,3 +15,15 @@ repo = 'Townk/vim-autoclose'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'jpo/vim-railscasts-theme'
+
+[[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
+repo = 'nanotech/jellybeans.vim'
+
+[[plugins]]
+repo = 'majutsushi/tagbar'
