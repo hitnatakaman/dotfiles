@@ -45,6 +45,10 @@ inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 imap {{ <C-o>${<Enter>
 nnoremap <Space>n :NERDTreeToggle<CR>
+nnoremap <Space>c "+y
+vnoremap <Space>c "+y
+nnoremap <Space>v "+gp
+nnoremap <Space>a ggVG
 
 " +-------------------------------------+
 " | dein.vim                            |
