@@ -104,4 +104,8 @@ let g:neosnippet#snippets_directory='~/.vim/bundle/neosnippet-snippets/snippets/
 " +-------------------------------------+
 " | neocomplete                         |
 " +-------------------------------------+
-let g:neocomplete#enable_at_startup = 1
+if has('lua')
+	let g:neocomplete#enable_at_startup = 1
+else
+	let g:neocomplcache_enable_at_startup = 1
+endif
