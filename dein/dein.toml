@@ -14,6 +14,9 @@ repo = 'tpope/vim-endwise'
 repo = 'Townk/vim-autoclose'
 
 [[plugins]]
+repo = 'junegunn/vim-easy-align'
+
+[[plugins]]
 repo = 'itchyny/lightline.vim'
 
 [[plugins]]
