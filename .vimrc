@@ -32,6 +32,8 @@ set ruler
 set showtabline=2
 set laststatus=2
 set t_Co=256
+set backspace=2
+set autoindent
 syntax on
 colorscheme default
 
@@ -49,8 +51,6 @@ nnoremap <Space>c "+y
 vnoremap <Space>c "+y
 nnoremap <Space>v "+gp
 nnoremap <Space>a ggVG
-set backspace=2
-set autoindent
 vmap <Enter> <Plug>(EasyAlign)
 
 " +-------------------------------------+
