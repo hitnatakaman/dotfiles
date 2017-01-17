@@ -49,6 +49,8 @@ nnoremap <Space>c "+y
 vnoremap <Space>c "+y
 nnoremap <Space>v "+gp
 nnoremap <Space>a ggVG
+set backspace=2
+set autoindent
 vmap <Enter> <Plug>(EasyAlign)
 
 " +-------------------------------------+
