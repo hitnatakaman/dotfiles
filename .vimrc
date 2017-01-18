@@ -120,6 +120,10 @@ endif
 " +-------------------------------------+
 " | neocomplete or neocomplcache        |
 " +-------------------------------------+
+" DirArrow
+let g:NERDTreeDirArrows=1
+let g:NERDTreeDirArrowExpandable='+'
+let g:NERDTreeDirArrowCollapsible='-'
 " NERDTress File highlighting
 function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
 	exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
