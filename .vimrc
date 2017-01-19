@@ -45,7 +45,7 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 imap {{ <C-o>${<Enter>
-nnoremap <Space>n :NERDTreeToggle<CR>
+nnoremap <Space>n :NERDTreeTabsToggle<CR>
 nnoremap <Space>t :Tagbar<CR>
 nnoremap <Space>c "+y
 vnoremap <Space>c "+y
