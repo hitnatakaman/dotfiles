@@ -32,6 +32,7 @@ set ruler
 set showtabline=2
 set laststatus=2
 set t_Co=256
+set backspace=2
 syntax on
 colorscheme default
 
