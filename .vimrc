@@ -33,7 +33,14 @@ set showtabline=2
 set laststatus=2
 set t_Co=256
 set backspace=2
+set noic
+set cmdheight=1
+set autoindent
 syntax on
+set directory=~/.vim/swapfiles
+set undofile
+set undodir=~/.vim/undofiles
+set nobackup
 colorscheme default
 
 " +-------------------------------------+
