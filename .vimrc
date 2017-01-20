@@ -45,12 +45,13 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 imap {{ <C-o>${<Enter>
-nnoremap <Space>n :NERDTreeTabsToggle<CR>
-nnoremap <Space>t :Tagbar<CR>
-nnoremap <Space>c "+y
-vnoremap <Space>c "+y
-nnoremap <Space>v "+gp
-nnoremap <Space>a ggVG
+nnoremap <silent> <Space>n :VimFiler -split -simple -winwidth=25 -no-quit<CR>
+nnoremap <silent> <Space>b :Unite bookmark -winheight=5<CR>
+nnoremap <silent> <Space>t :Tagbar<CR>
+nnoremap <silent> <Space>c "+y
+vnoremap <silent> <Space>c "+y
+nnoremap <silent> <Space>v "+gp
+nnoremap <silent> <Space>a ggVG
 vmap <Enter> <Plug>(EasyAlign)
 
 " +-------------------------------------+
@@ -119,27 +120,18 @@ else
 endif
 
 " +-------------------------------------+
-" | NERDTree                            |
+" | VimFiler                            |
 " +-------------------------------------+
-" DirArrow
-let g:NERDTreeDirArrows=1
-let g:NERDTreeDirArrowExpandable='+'
-let g:NERDTreeDirArrowCollapsible='-'
-" NERDTress File highlighting
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
-	exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
-	exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-endfunction
-  
-call NERDTreeHighlightFile( 'php',     'magenta', 'none',     'magenta', '#151515')
-call NERDTreeHighlightFile(  'rb',         'red', 'none',         'red', '#151515')
-call NERDTreeHighlightFile('html',      'yellow', 'none',      'yellow', '#151515')
-call NERDTreeHighlightFile( 'css', 'lightyellow', 'none', 'lightyellow', '#151515')
-call NERDTreeHighlightFile(  'vb',       'green', 'none',       'green', '#151515')
-call NERDTreeHighlightFile(  'js',   'lightblue', 'none',   'lightblue', '#151515')
-call NERDTreeHighlightFile('java',        'blue', 'none',        'blue', '#151515')
-call NERDTreeHighlightFile(  'md',       'brown', 'none',       'brown', '#151515')
-call NERDTreeHighlightFile(  'pl',  'lightgreen', 'none',  'lightgreen', '#151515')
+let g:vimfiler_safe_mode_by_default = 0
+"call NERDTreeHighlightFile( 'php',     'magenta', 'none',     'magenta', '#151515')
+"call NERDTreeHighlightFile(  'rb',         'red', 'none',         'red', '#151515')
+"call NERDTreeHighlightFile('html',      'yellow', 'none',      'yellow', '#151515')
+"call NERDTreeHighlightFile( 'css', 'lightyellow', 'none', 'lightyellow', '#151515')
+"call NERDTreeHighlightFile(  'vb',       'green', 'none',       'green', '#151515')
+"call NERDTreeHighlightFile(  'js',   'lightblue', 'none',   'lightblue', '#151515')
+"call NERDTreeHighlightFile('java',        'blue', 'none',        'blue', '#151515')
+"call NERDTreeHighlightFile(  'md',       'brown', 'none',       'brown', '#151515')
+"call NERDTreeHighlightFile(  'pl',  'lightgreen', 'none',  'lightgreen', '#151515')
 
 " +-------------------------------------+
 " | lightline                           |

@@ -2,16 +2,19 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'scrooloose/nerdtree'
+repo = 'Shougo/unite.vim'
 
 [[plugins]]
-repo = 'jistr/vim-nerdtree-tabs'
+repo = 'Shougo/vimfiler'
 
 [[plugins]]
 repo = 'junegunn/vim-easy-align'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'Townk/vim-autoclose'
 
 [[plugins]]
 repo = 'jpo/vim-railscasts-theme'
