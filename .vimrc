@@ -24,23 +24,23 @@ endif
 " +-------------------------------------+
 set title
 set number
-set incsearch
-set hlsearch
-set tabstop=4
-set shiftwidth=4
-set ruler
-set showtabline=2
-set laststatus=2
-set t_Co=256
-set backspace=2
 set noic
-set cmdheight=1
+set hlsearch
+set incsearch
+set ruler
 set autoindent
-syntax on
-set directory=~/.vim/swapfiles
+set tabstop=4
+set backspace=2
+set shiftwidth=4
+set showtabline=2
+set cmdheight=1
+set laststatus=2
 set undofile
-set undodir=~/.vim/undofiles
 set nobackup
+set directory=~/.vim/swapfiles
+set undodir=~/.vim/undofiles
+set t_Co=256
+syntax on
 colorscheme default
 
 " +-------------------------------------+
@@ -68,8 +68,6 @@ if &compatible
   set nocompatible
 endif
 
-" need 'git clone https://github.com/Shougo/dein.vim
-"   ->    ~/.vim/dein/repos/github.com/Shougo/dein.vim'
 set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
 
 if dein#load_state(expand('~/.vim/dein'))
@@ -130,15 +128,6 @@ endif
 " | VimFiler                            |
 " +-------------------------------------+
 let g:vimfiler_safe_mode_by_default = 0
-"call NERDTreeHighlightFile( 'php',     'magenta', 'none',     'magenta', '#151515')
-"call NERDTreeHighlightFile(  'rb',         'red', 'none',         'red', '#151515')
-"call NERDTreeHighlightFile('html',      'yellow', 'none',      'yellow', '#151515')
-"call NERDTreeHighlightFile( 'css', 'lightyellow', 'none', 'lightyellow', '#151515')
-"call NERDTreeHighlightFile(  'vb',       'green', 'none',       'green', '#151515')
-"call NERDTreeHighlightFile(  'js',   'lightblue', 'none',   'lightblue', '#151515')
-"call NERDTreeHighlightFile('java',        'blue', 'none',        'blue', '#151515')
-"call NERDTreeHighlightFile(  'md',       'brown', 'none',       'brown', '#151515')
-"call NERDTreeHighlightFile(  'pl',  'lightgreen', 'none',  'lightgreen', '#151515')
 
 " +-------------------------------------+
 " | lightline                           |
