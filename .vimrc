@@ -5,6 +5,11 @@
 if has('win32') || has('win64')
 endif
 
+" Git for Windows
+if has('win32unix')
+	let g:vimproc_dll_path = '~/.vim/dein/repos/github.com/Shougo/vimproc/autoload/vimproc_win32.dll'
+endif
+
 " LINUX
 if has('unix')
 endif
