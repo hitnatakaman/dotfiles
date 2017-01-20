@@ -15,3 +15,12 @@ on_i = 1
 repo = 'Shougo/neocomplcache'
 if = '!has("lua")'
 on_i = 1
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+on_i = 1
+
+[[plugins]]
+repo = 'Townk/vim-autoclose'
+on_i = 1
+
