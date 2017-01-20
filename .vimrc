@@ -12,6 +12,7 @@ endif
 
 " LINUX
 if has('unix')
+	let g:vimproc_dll_path = '~/.vim/dein/repos/github.com/Shougo/vimproc/autoload/vimproc_linux64.so'
 endif
 
 " MAC
