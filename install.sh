@@ -8,3 +8,12 @@ fi
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 ln -sf ~/dotfiles/dein/dein.toml ~/.vim/dein/dein.toml
 ln -sf ~/dotfiles/dein/dein_lazy.toml ~/.vim/dein/dein_lazy.toml
+
+# create directorys
+createDirectorys=(
+	~/.vim/swapfiles
+	~/.vim/undofiles
+)
+for path in ${createDirectorys[@]}; do
+	mkdir -p $path
+done
