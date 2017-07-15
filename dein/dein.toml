@@ -9,6 +9,10 @@ repo = 'Shougo/vimfiler'
 
 [[plugins]]
 repo = 'Shougo/vimproc'
+build = 'make'
+
+[[plugins]]
+repo = 'Shougo/vimshell'
 
 [[plugins]]
 repo = 'thinca/vim-quickrun'
@@ -21,15 +25,3 @@ repo = 'itchyny/lightline.vim'
 
 [[plugins]]
 repo = 'Townk/vim-autoclose'
-
-[[plugins]]
-repo = 'jpo/vim-railscasts-theme'
-
-[[plugins]]
-repo = 'tomasr/molokai'
-
-[[plugins]]
-repo = 'nanotech/jellybeans.vim'
-
-[[plugins]]
-repo = 'majutsushi/tagbar'

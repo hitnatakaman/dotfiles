@@ -1,28 +1,9 @@
 " +-------------------------------------+
 " | os settings                         |
 " +-------------------------------------+
-" Windows
-if has('win32') || has('win64')
-endif
-
-" Git for Windows
-if has('win32unix')
-	let g:vimproc_dll_path = '~/.vim/dein/repos/github.com/Shougo/vimproc/autoload/vimproc_win32.dll'
-endif
-
 " LINUX
 if has('unix')
-	let g:vimproc_dll_path = '~/.vim/dein/repos/github.com/Shougo/vimproc/autoload/vimproc_linux64.so'
-endif
-
-" MAC
-if has('mac')
-endif
-
-" GUI
-if has('gui_running')
-	set lines=35
-	set columns=120
+	let g:vimproc_dll_path = '~/.vim/dein/repos/github.com/Shougo/vimproc/lib/vimproc_linux64.so'
 endif
 
 " +-------------------------------------+
@@ -48,6 +29,7 @@ set undodir=~/.vim/undofiles
 set t_Co=256
 syntax on
 colorscheme default
+set splitbelow
 
 " +-------------------------------------+
 " | keymap                              |
@@ -66,6 +48,10 @@ vnoremap <silent> <Space>c "+y
 nnoremap <silent> <Space>v "+gp
 nnoremap <silent> <Space>a ggVG
 vmap <Enter> <Plug>(EasyAlign)
+nnoremap <silent> vs :VimShellPop bash<CR>
+nnoremap <silent> <Space>irb :VimShellInteractive irb<CR>
+vmap <silent> <Space>s :VimShellSendString<CR>
+nnoremap <silent> <Space>s <S-v>:VimShellSendString<CR>
 
 " +-------------------------------------+
 " | dein.vim                            |

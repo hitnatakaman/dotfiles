@@ -19,3 +19,11 @@ on_i = 1
 [[plugins]]
 repo = 'tpope/vim-endwise'
 on_i = 1
+
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+on_path = '.*'
+
+[[plugins]]
+repo = 'koron/codic-vim'
+on_cmd = 'Codic'
