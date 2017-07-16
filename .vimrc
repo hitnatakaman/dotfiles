@@ -47,6 +47,7 @@ nnoremap <silent> <Space>c "+y
 vnoremap <silent> <Space>c "+y
 nnoremap <silent> <Space>v "+gp
 nnoremap <silent> <Space>a ggVG
+nnoremap <silent> <Space>r :QuickRun -outputter/buffer/split ":botright 5sp"<CR>
 vmap <Enter> <Plug>(EasyAlign)
 nnoremap <silent> vs :VimShellPop bash<CR>
 nnoremap <silent> <Space>irb :VimShellInteractive irb<CR>
